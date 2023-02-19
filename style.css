@@ -88,7 +88,7 @@ nav .toggle{
 .header-text h1{
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 34%;
     transform: translate(-50%, -50%);
 }
 .header-text h1 .color1{
@@ -98,8 +98,8 @@ h1:last-child{
     margin: 9px;
     padding: 0;
     position: absolute;
-    top: 75%;
-    left: 30%;
+    top: 78%;
+    left: 32%;
     transform: translate(-50%, -50%);
     font-family: sans-serif;
     color: rgb(10, 244, 158);
@@ -444,6 +444,14 @@ form .btn2{
     .header-text h1:first-child{
         font-size: 2vmax;
     }
+    .header-text h1{
+        left: 46%;
+    }
+    h1:last-child{
+        font-size: 3vmax;
+        
+        left: 40%;
+    }
     nav .toggle{
         display: block;
         width: 30px;
@@ -478,6 +486,19 @@ form .btn2{
         left: 25px;
     
     }
+    .about-col-1 img{
+        width: 210px;  
+
+    }
+    .row{
+        margin-left: 60px;
+        margin-bottom: 50px;
+    }
+    .about-col-1{
+        flex-basis: 70%;
+        height: 250px;
+    }
+    
 }
 
 
