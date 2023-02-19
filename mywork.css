@@ -70,9 +70,7 @@
 .image-bg{
     width: 20vmax;
     height: 28vmax;
-
     margin-top: 10px;
-    /* margin-left: 25%; */
     
     border: 1px solid black;
     box-shadow: 0 0 5px black;
@@ -144,4 +142,25 @@
 
 .swiper-slide img {
     width: 100%;
+}
+@media only screen and (max-width: 875px){
+    .workcontainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #head{
+        width: 100%;
+        height: 190vh;
+        background-image: none;
+        background-color: black;
+    }
+    .image-bg{
+        width: 34vmax;
+        height: 48vmax;
+    }
+    .swiper{
+        width: 65%;
+    }
+
 }
