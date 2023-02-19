@@ -95,10 +95,10 @@ nav .toggle{
     color: rgb(0 149 255);
 }
 h1:last-child{
-    margin: 9px;
+    margin: 5px;
     padding: 0;
     position: absolute;
-    top: 78%;
+    top: 70%;
     left: 32%;
     transform: translate(-50%, -50%);
     font-family: sans-serif;
@@ -443,14 +443,17 @@ form .btn2{
     }
     .header-text h1:first-child{
         font-size: 2vmax;
+        width: 100%;
     }
     .header-text h1{
-        left: 46%;
+        left: 60%;
+
     }
+    
+
     h1:last-child{
-        font-size: 3vmax;
-        
-        left: 40%;
+        font-size: 6vmax;
+        left: 50%;
     }
     nav .toggle{
         display: block;
