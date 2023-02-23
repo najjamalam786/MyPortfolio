@@ -434,6 +434,7 @@ form .btn2{
 }
 
 
+
 @media only screen and (max-width: 875px){
     /* #header{
         background-image: url(images/phone-background.png);
@@ -443,27 +444,19 @@ form .btn2{
     }
     .header-text h1:first-child{
         font-size: 2vmax;
-        width: 100%;
-    }
-    .header-text h1{
-        left: 60%;
-
+        width: 60%;
+        margin-left: 50px;
     }
     
-
-    h1:last-child{
-        font-size: 6vmax;
-        left: 50%;
-    }
     nav .toggle{
         display: block;
-        width: 30px;
+        width: 20px;
         cursor: pointer;
-        border: 1px solid #ff004f;
+        /* border: 1px solid #ff004f; */
         margin-right: 10px;
     }
     nav ul{
-        background-color: rgb(40, 101, 182);
+        background-color: rgb(66, 66, 66);
         position: fixed;
         top: 0;
         right: -200px;
@@ -476,12 +469,12 @@ form .btn2{
     nav ul li{
         display: block;
         margin: 25px;
-
+    
     }
     nav ul li a{
         
         color: rgb(255, 255, 255);
-
+    
     }
     nav ul .toggle{
         position: absolute;
@@ -489,6 +482,13 @@ form .btn2{
         left: 25px;
     
     }
+    
+
+    h1:last-child{
+        font-size: 6vmax;
+        left: 50%;
+    }
+
     .about-col-1 img{
         width: 210px;  
 
