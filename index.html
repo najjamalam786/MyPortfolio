@@ -24,9 +24,9 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <img class="toggle" src="images/cross.png" onclick="closemenu()" alt="">
+                    <img class="toggle" src="images/cross2.png" onclick="closemenu()" alt="">
                 </ul>
-                <img class="toggle" src="images/menu.png" onclick="openmenu()" alt="">
+                <img class="toggle" src="images/menu2.png" onclick="openmenu()" alt="">
             </nav>
             
             <div class="header-text">
@@ -70,7 +70,11 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
+                    <div class="visible-content">
                     <p style="margin-top: 5px;">Hi, my name is Nazm. I have expertise in web development, social media marketing, logo designing, thumbnail and video editing for several purposes. As a web developer, I am passionate about creating dynamic and user-friendly websites that exceed expectations and deliver exceptional user experiences. My journey in web development began with a curiosity for how websites worked and a determination to learn how to build them myself. I started my journey in web development as a hobby, but quickly realized that it was a passion and decided to pursue it as a career. Through countless hours of self-study and hands-on practice, I have honed my skills as a web developer and continue to explore new technologies and frameworks to stay at the forefront of the industry. As I have progressed on my web development journey, I have had the opportunity to work on a diverse range of projects, from small business websites to large-scale e-commerce platforms.</p>
+                     
+                    </div>
+                  <a class="more"></a>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -191,6 +195,7 @@
                     <img src="certificate/Certificate-Advanced-Excel-Tutorial-Online-Md-Najjam.png" alt="certiifcate">
                 </div>
             </div>
+            <a class="moreDoc"></a>
         </div>
     </div> 
 
@@ -260,7 +265,7 @@
 
                 </div>
             </div>
-            <a href="/MyPortfolio/mywork.html" class="btn" target="_blank" rel="noopener noreferer">See more</a>
+            <a href="/mywork.html" class="btn" target="_blank" rel="noopener noreferer">See more</a>
         </div>
     </div>
 
@@ -344,6 +349,26 @@ function closemenu(){
 
 
 </script>
+
+<script>
+    let more = document.querySelectorAll(".more");
+    for(let i = 0; i<more.length; i++){
+        more[i].addEventListener('click', function(){
+            more[i].parentNode.classList.toggle('active')
+        })
+    }
+    
+</script>
+<script>
+    let moreDoc = document.querySelectorAll(".moreDoc");
+    for(let i = 0; i<moreDoc.length; i++){
+        moreDoc[i].addEventListener('click', function(){
+            moreDoc[i].parentNode.classList.toggle('active')
+        })
+    }
+    
+</script>
+
 
 </body>
 </html>
