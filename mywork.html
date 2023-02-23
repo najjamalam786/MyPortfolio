@@ -31,14 +31,14 @@
             <li><a href="/MyPortfolio#contact">Contact</a></li>
             <img
               class="toggle"
-              src="images/cross.png"
+              src="images/cross2.png"
               onclick="closemenu()"
               alt=""
             />
           </ul>
           <img
             class="toggle"
-            src="images/menu.png"
+            src="images/menu2.png"
             onclick="openmenu()"
             alt=""
           />
@@ -88,7 +88,7 @@
             <div class="swiper-button-next"></div>
           </div>
 
-          <div style="margin-top: 5vmax;"><video width="440" height="450" src="/mywork/video 01.mp4" controls></video></div>
+          <div class="videoP" style="margin-top: 5vmax;"><video src="/mywork/video 01.mp4" controls></video></div>
         </div>
       </div>
     </div>
@@ -96,13 +96,22 @@
     <div class="container">
       <div class="containWeb">
       <div class="mywebDoc">
+        <div class="webText">
+          <h1 style="margin-top: 50px;"><u>My Website Experience</u></h1>
+          <h4 style="margin-top: -4vmax;"><br/><br/><br/>I specialize in creating visually stunning and user-friendly websites that are optimized for better performance. My designs are tailored to your brand's unique needs and personality, ensuring that your website stands out from the competition.
+
+            I use the latest web design tools and techniques to create websites that load quickly and are easy to navigate, providing your users with a seamless experience. I pay close attention to website performance, ensuring that your website is optimized for speed and that it meets all relevant web standards.
+            
+            Whether you need a new website designed from scratch or you want to revamp your existing website, I am confident that I can provide you with a website that not only looks great but performs exceptionally well. Let me help you take your online presence to the next level.</h4>
+        </div>
+        <a class="mainWeb"></a>
         <a href="https://bejewelled-twilight-652692.netlify.app" ><img src="images/Screenshot (442).png" alt=""></a>
-        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde provident ratione, officia facere sit eaque fugiat voluptate accusantium labore assumenda dolorem veniam rerum, natus hic distinctio dicta, blanditiis impedit ipsa.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem totam eveniet a quasi blanditiis consequatur architecto, quaerat animi sapiente inventore tenetur incidunt corrupti laudantium iure ullam id alias omnis?</h2>  
+        <h2> This is the website of restaurant landing page have latest web design tools and tecniques.</h2>  
       </div>
       <div class="mywebDoc">
       <a href="https://radiant-licorice-fda463.netlify.app" ><img src="images/Screenshot (443).png" alt=""></a>
       
-     <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde provident ratione, officia facere sit eaque fugiat voluptate accusantium labore assumenda dolorem veniam rerum, natus hic distinctio dicta, blanditiis impedit ipsa.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem totam eveniet a quasi blanditiis consequatur architecto, quaerat animi sapiente inventore tenetur incidunt corrupti laudantium iure ullam id alias omnis?</h2>
+     <h2> This is another restaurant landing page load quickly and are easy to navigate, providing your users with a seamless experience.</h2>
     </div>
     </div>
     </div>
@@ -203,7 +212,7 @@
       const swiper = new Swiper(".swiper", {
         
         autoplay:{
-            delay: 3000,
+            delay: 8000,
             disableOnInteraction: false,
         },
 
@@ -221,6 +230,16 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+
+    <script>
+      let mainWeb = document.querySelectorAll(".mainWeb");
+
+      for(let i = 0; i<mainWeb.length ; i++){
+        mainWeb[i].addEventListener("click", function(){
+          mainWeb[i].parentNode.classList.toggle("active")
+        })
+      }
     </script>
   </body>
 </html>
