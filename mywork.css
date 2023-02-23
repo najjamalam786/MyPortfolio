@@ -1,179 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/x-icon" href="images/logoPortfolio.png" />
 
-#head{
-    width: 100%;
-    height: 100vh;
-    background-image: url(./images/wallpaper1.jpg);
-    background-size: cover;
-    /* background-attachment: fixed; */
-    background-position: center;
-}
-.contain{
-    padding: 5px 5%;
-}
-.img-box{
-    margin:auto;
-    /* width:50%; */
-    /* text-align: center; */
-}
-/* .image-box{
-    width: 100%;
-} */
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mywork.css" />
+    <!-- <link rel="stylesheet" href="progressBar.css">
+    <link rel="stylesheet" href="fallingT.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>My Work</title>
+  </head>
+  <body>
+    <div id="head">
+      <div class="contain">
+        <nav id="navbar">
+          <!-- <img src="images/logo.png" class="logo"/> -->
+          <h1 class="logo"><span>N</span>ajjam.</h1>
+          <ul id="sidemenu">
+            <li><a href="/MyPortfolio#">Home</a></li>
+            <li><a href="/MyPortfolio#about">About</a></li>
+            <li><a href="/MyPortfolio#certificates">My Certificates</a></li>
+            <li><a href="/MyPortfolio#services">Services</a></li>
+            <li><a href="/MyPortfolio#portfolio">Portfolio</a></li>
+            <li><a href="/MyPortfolio#contact">Contact</a></li>
+            <img
+              class="toggle"
+              src="images/cross2.png"
+              onclick="closemenu()"
+              alt=""
+            />
+          </ul>
+          <img
+            class="toggle"
+            src="images/menu2.png"
+            onclick="openmenu()"
+            alt=""
+          />
+        </nav>
+        <h1 class="work">My work</h1>
+        <div class="workcontainer">
+            <div class="img-box">
+          <div class="image-box">
+              <input type="radio" id="img-01" name="image" checked />
+              <input type="radio" id="img-02" name="image" />
+              <input type="radio" id="img-03" name="image" />
+              <input type="radio" id="img-04" name="image" />
+              <div class="image-bg"></div>
+          </div>
+        </div>
 
-.work{
-    margin-top: 5vmax;
-    font-size: 5vmax;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+<!------ Slider main container -------->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="/mywork/slider 1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/mywork/slider 2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/mywork/slider 3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/mywork/slider 4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/mywork/slider 5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/mywork/slider 6.png" alt="" />
+              </div>
+              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-}
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
 
-.image-box input{
-    width: 60px;
-    height: 60px;
-    margin-top: 1vmax;
-    border: 1px solid gray;
-    display: inline-block;
-    outline: none;
-    appearance: none;
-    cursor: pointer;
-    box-shadow: 0 0 2px black;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
+          <div class="videoP" style="margin-top: 5vmax;"><video src="/mywork/video 01.mp4" controls></video></div>
+        </div>
+      </div>
+    </div>
+    <!---------------about me--------------->
+    <div class="container">
+      <div class="containWeb">
+      <div class="mywebDoc">
+        <div class="webText">
+          <h1 style="margin-top: 50px;"><u>My Website Experience</u></h1>
+          <h4 style="margin-top: -4vmax;"><br/><br/><br/>I specialize in creating visually stunning and user-friendly websites that are optimized for better performance. My designs are tailored to your brand's unique needs and personality, ensuring that your website stands out from the competition.
 
-.image-box input[type="radio"]:hover{
-    transform:scale(1.1);
-    box-shadow: 0 0 5px black;
-}
-#img-01{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer.png);
-    background-size: cover;
-}
-#img-02{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer\ \(2\).png);
-    background-size: cover;
-}
-#img-03{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer\ \(1\).png);
-    background-size: cover;
-}
-#img-04{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer\ \(3\).png);
-    background-size: cover;
-}
-/* #img-05{
-    background-image: url(mywork/Logo\ 2.png);
-    background-size: cover;
-} */
-.image-bg{
-    width: 20vmax;
-    height: 28vmax;
-    margin-top: 10px;
-    
-    border: 1px solid black;
-    box-shadow: 0 0 5px black;
-}
+            I use the latest web design tools and techniques to create websites that load quickly and are easy to navigate, providing your users with a seamless experience. I pay close attention to website performance, ensuring that your website is optimized for speed and that it meets all relevant web standards.
+            
+            Whether you need a new website designed from scratch or you want to revamp your existing website, I am confident that I can provide you with a website that not only looks great but performs exceptionally well. Let me help you take your online presence to the next level.</h4>
+        </div>
+        <a class="mainWeb"></a>
+        <a href="https://bejewelled-twilight-652692.netlify.app" ><img src="images/Screenshot (442).png" alt=""></a>
+        <h2> This is the website of restaurant landing page have latest web design tools and tecniques.</h2>  
+      </div>
+      <div class="mywebDoc">
+      <a href="https://radiant-licorice-fda463.netlify.app" ><img src="images/Screenshot (443).png" alt=""></a>
+      
+     <h2> This is another restaurant landing page load quickly and are easy to navigate, providing your users with a seamless experience.</h2>
+    </div>
+    </div>
+    </div>
 
+    <!-- -----------------contact------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><img src="images/send.png" alt="" /> najjamalam786@gmail.com</p>
+            <p><img src="images/iphone.png" alt="" />0123456789</p>
+            <div class="social-icon">
+              <a href="https://www.facebook.com/profile.php?id=100009162914855/"
+                ><img src="images/facebook.png" alt=""
+              /></a>
+              <a href="https://www.instagram.com/m_nazam_/"
+                ><img src="images/instagram.png" alt=""
+              /></a>
+              <a href="#"><img src="images/twitter.png" alt="" /></a>
+              <a href="https://www.linkedin.com/in/md-najjam-alam-823230221/"
+                ><img src="images/linkedin.png" alt=""
+              /></a>
+              <a href="https://github.com/najjamalam786/"
+                ><img src="images/github.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="#">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id="textarea"
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️ Najjam. Made with❤️Love and Trust</p>
+      </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-#img-01:checked ~ .image-bg{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer.png);
-    background-size: cover;
-}
-#img-02:checked ~ .image-bg{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer\ \(2\).png);
-    background-size: cover;
-}
-#img-03:checked ~ .image-bg{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer\ \(1\).png);
-    background-size: cover;
-}
-#img-04:checked ~ .image-bg{
-    background-image: url(mywork/Yellow\ and\ White\ Restaurant\ Flyer\ \(3\).png);
-    background-size: cover;
-}
-/* #img-05:checked ~ .image-bg{
-    background-image: url(mywork/Logo\ 2.png);
-    background-size: cover;
-} */
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
 
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-/* ----------------------- swiper --------------- */
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
 
-.workcontainer{
-    display: flex;
-    margin-top: -60px;
-}
+    <script>
+      var lastScrollTop = 0;
+      var navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-80px";
+          navbar.style.transition = "0.5s";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
 
-.swiper{
-    width: 30%;
-    height: fit-content;
-    margin-top: 5vmax;
+      const swiper = new Swiper(".swiper", {
+        
+        autoplay:{
+            delay: 8000,
+            disableOnInteraction: false,
+        },
 
-}
+        loop: true,
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next{
-    color: white;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    transition: 0.4s ease-in-out;
-    
-}
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
 
-.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover{
-    background-color: rgba(206, 203, 203, 0.671);
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
-    
-}
-.swiper .swiper-pagination-bullet{
-    background: white;
-    cursor: pointer;
-}
-.swiper .swiper-pagination-bullet-active{
-    background: white;
-    transition: all 0.4s ease-in-out;
-    transform:scale(2.1);
+    <script>
+      let mainWeb = document.querySelectorAll(".mainWeb");
 
-}
-
-
-.swiper-slide img {
-    width: 100%;
-}
-
-/* ------------------ about ----------------- */
-
-.containWeb{
-    width: 100%;
-}
-.mywebDoc img{
-    width: 100%;
-    margin: 5vmax 0 5vmax;
-}
-
-
-
-@media only screen and (max-width: 875px){
-    .workcontainer{
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-    #head{
-        width: 100%;
-        height: 190vh;
-        background-image: none;
-        background-color: black;
-    }
-    .image-bg{
-        width: 34vmax;
-        height: 48vmax;
-    }
-    .swiper{
-        width: 65%;
-    }
-
-}
+      for(let i = 0; i<mainWeb.length ; i++){
+        mainWeb[i].addEventListener("click", function(){
+          mainWeb[i].parentNode.classList.toggle("active")
+        })
+      }
+    </script>
+  </body>
+</html>
