@@ -173,6 +173,48 @@ h1:last-child{
     color: rgb(253, 254, 255);
     border-bottom: 2px solid rgb(0 149 255);
 }
+.visible-content{
+    position: relative;
+    height: 5vmax;
+    overflow: hidden;
+}
+
+
+.visible-content::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(8,8,8));
+
+}
+.about-col-2 .more{
+    position: relative;
+    /* padding: 10px 15px; */
+    /* background-color: white; */
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+
+    color: rgb(184, 9, 82);
+}
+.about-col-2 .more::before{
+    content: "Read more";
+}
+.about-col-2.active .more::before{
+    content: "Read less";
+}
+
+.about-col-2.active .visible-content{
+    height: auto;
+    
+}
+.about-col-2.active .visible-content::before{
+    display: none;    
+}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -214,6 +256,7 @@ h1:last-child{
 }
 
 
+
 /* --------------certificates--------------- */
 
 #certificates{
@@ -233,6 +276,42 @@ h1:last-child{
     transform: translateY(-10px);
     box-shadow: 0px 15px 15px rgb(202, 200, 200);
 }
+
+.certificate-list{
+    position: relative;
+    height: 50vmax;
+    overflow: hidden;
+}
+.certificate-list::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(8,8,8));
+}
+.container .moreDoc{
+    position: relative;
+    margin-top: 15px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(228, 20, 82);
+}
+.container .moreDoc::before{
+    content: "Show more";
+}
+.container.active .moreDoc::before{
+    content: "Show less";
+}
+.container.active .certificate-list{
+    height: auto;
+}
+.container.active .certificate-list::before{
+    display: none;
+}
+
+
 
 /* -----------------services------------------ */
 
@@ -434,6 +513,7 @@ form .btn2{
 }
 
 
+
 @media only screen and (max-width: 875px){
     /* #header{
         background-image: url(images/phone-background.png);
@@ -443,27 +523,19 @@ form .btn2{
     }
     .header-text h1:first-child{
         font-size: 2vmax;
-        width: 100%;
-    }
-    .header-text h1{
-        left: 60%;
-
+        width: 60%;
+        margin-left: 50px;
     }
     
-
-    h1:last-child{
-        font-size: 6vmax;
-        left: 50%;
-    }
     nav .toggle{
         display: block;
-        width: 30px;
+        width: 20px;
         cursor: pointer;
-        border: 1px solid #ff004f;
+        /* border: 1px solid #ff004f; */
         margin-right: 10px;
     }
     nav ul{
-        background-color: rgb(40, 101, 182);
+        background-color: rgb(66, 66, 66);
         position: fixed;
         top: 0;
         right: -200px;
@@ -476,12 +548,12 @@ form .btn2{
     nav ul li{
         display: block;
         margin: 25px;
-
+    
     }
     nav ul li a{
         
         color: rgb(255, 255, 255);
-
+    
     }
     nav ul .toggle{
         position: absolute;
@@ -489,6 +561,13 @@ form .btn2{
         left: 25px;
     
     }
+    
+
+    h1:last-child{
+        font-size: 6vmax;
+        left: 50%;
+    }
+
     .about-col-1 img{
         width: 210px;  
 
