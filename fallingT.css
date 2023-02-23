@@ -1,0 +1,65 @@
+
+.header-text span{
+    
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 3vmax;
+    font-weight: 700;
+    letter-spacing: 1vw;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+    position: relative;
+    transform: translateY(-100vh);
+    animation: fall 3.5s forwards;
+
+}
+@keyframes fall{
+    100%{
+        transform: translateY(0);
+    }
+}
+.header-text span:nth-child(2){
+    animation-delay: 0.5s;
+}
+.header-text span:nth-child(3){
+    animation-delay: 1s;
+}
+.header-text span:nth-child(4){
+    animation-delay: 1.5s;
+}
+.header-text span:nth-child(5){
+    animation-delay: 2s;
+}
+.header-text span:nth-child(6){
+    animation-delay: 2.5s;
+}
+.header-text span:nth-child(10){
+    animation-delay: 0.5s;
+}
+.header-text span:nth-child(11){
+    animation-delay: 1s;
+}
+.header-text span:nth-child(12){
+    animation-delay: 1.5s;
+}
+
+.header-text span:nth-child(14){
+    animation-delay: 0.5s;
+}
+.header-text span:nth-child(15){
+    animation-delay: 1s;
+}
+.header-text span:nth-child(16){
+    animation-delay: 1.5s;
+}
+.header-text span:nth-child(17){
+    animation-delay: 2s;
+}
+@media only screen and (max-width: 875px){
+ .header-text span{
+    font-size: 4vmax;
+ }   
+}
+
+
+
+
