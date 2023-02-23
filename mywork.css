@@ -143,6 +143,19 @@
 .swiper-slide img {
     width: 100%;
 }
+
+/* ------------------ about ----------------- */
+
+.containWeb{
+    width: 100%;
+}
+.mywebDoc img{
+    width: 100%;
+    margin: 5vmax 0 5vmax;
+}
+
+
+
 @media only screen and (max-width: 875px){
     .workcontainer{
         display: flex;
