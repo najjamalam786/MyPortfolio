@@ -10,17 +10,26 @@
     <link rel="stylesheet" href="progressBar.css">
     <link rel="stylesheet" href="fallingT.css">
     <title>Personal Portfolio Website</title>
+    <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("B8bHzcK1e4eGN_jSi");
+   })();
+</script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav id="navbar">
                 <!-- <img src="images/logo.png" class="logo"/> -->
-                <h1 class="logo"><span>N</span>ajjam.</h1>
+                <h1 class="logo"><span>N</span>ajjam.<span style="font-size: 22px; font-family: Roboto; color: rgb(255, 28, 126);">Dev</span></h1>
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#certificates">My Certificates</a></li>
+                    <!-- <li><a href="#certificates">My Certificates</a></li> -->
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -45,19 +54,34 @@
                     <span>A</span>
                     <span>M</span> -->
                     
-                    From   
+                    from   
                     <span class="color1">I</span>
                     <span>N</span>
                     <span>D</span>
                     <span>I</span>
-                    <span>A</span>
+                    <span>A</span> a passionate
 
                     </h1>
 
-                <h1 data-text="Web Desigener">Web Developer</h1>
+                <h1 data-text="Front-End Developer">Front-End Developer</h1>
+                
             </div>
             <div class="myimg">
                 <img src="images/image5.png" alt="">
+            </div>
+            <div class="skill-stock">
+                <div class="skills">
+                    <span><span style="color:rgb(92, 175, 248)">Skill</span> Stock&nbsp; &nbsp;&nbsp;|</span>
+                </div>
+                <div class="tech-tools">
+                    <img src="/images/html.png" alt="tech-logo">
+                    <img src="/images/css-3.png" alt="tech-logo">
+                    <img src="/images/js.png" alt="tech-logo">
+                    <img src="/images/science.png" alt="tech-logo">
+                    <img src="/images/git.png" alt="tech-logo">
+                    <img src="/images/figma.png" alt="tech-logo">
+                    <img src="/images/canva-png.png" alt="tech-logo">
+                </div>
             </div>
         </div> 
     </div>
@@ -71,7 +95,7 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <div class="visible-content">
-                    <p style="margin-top: 5px;">Hi, my name is Nazm. I have expertise in web development, social media marketing, logo designing, thumbnail and video editing for several purposes. As a web developer, I am passionate about creating dynamic and user-friendly websites that exceed expectations and deliver exceptional user experiences. My journey in web development began with a curiosity for how websites worked and a determination to learn how to build them myself. I started my journey in web development as a hobby, but quickly realized that it was a passion and decided to pursue it as a career. Through countless hours of self-study and hands-on practice, I have honed my skills as a web developer and continue to explore new technologies and frameworks to stay at the forefront of the industry. As I have progressed on my web development journey, I have had the opportunity to work on a diverse range of projects, from small business websites to large-scale e-commerce platforms.</p>
+                    <p style="margin-top: 5px;">Hi, my name is Najjam Alam. I have expertise in front-end web developer and UI/UX designer, logo designing, thumbnail and video editing for several purposes. As a front-end web developer, I am passionate about creating user-friendly websites that exceed expectations and deliver exceptional user experiences. My journey in web development began with a curiosity for how websites worked and a determination to learn how to build them myself. I started my journey in web development as a hobby, but quickly realized that it was a passion and decided to pursue it as a career. Through countless hours of self-study and hands-on practice, I have honed my skills as a web developer and continue to explore new technologies and frameworks to stay at the forefront of the industry.</p>
                      
                     </div>
                   <a class="more"></a>
@@ -84,13 +108,13 @@
                         <ul>
                             <li><span>Web Development</span><br>Web app Development</li>
                             <li><span>UI/UX Design</span><br>Designing Web/App interfaces</li>
-                            <li><span>Social Media Marketing</span><br>Facebook, Instagram influencer</li>
+                            <li><span>Social Media Management</span><br>Facebook, Instagram influencer</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>I have been working as a web developer for the past 4 years. My expertise includes front-end development, back-end development, and full-stack development. In terms of front-end development, I am proficient in using HTML, CSS, JavaScript, and related frameworks such as React and Vue.js to create responsive and user-friendly interfaces. For back-end development, I am skilled in using Node.js and I have experience with popular frameworks such as Express.js etc.</span></li>
-                            <li><span>I am skilled in conducting thorough research to understand the client's target audience, competition, and industry trends. Based on this research, I develop a comprehensive social media strategy that includes goals, objectives, target audience, content plan, and key performance indicators.</span></li>
+                            <li><span>I have been learning and working as a front-end web developer for the past 3 years. In terms of front-end development, I am proficient in using HTML, CSS, JavaScript, and related frameworks such as React to create responsive and user-friendly interfaces.</span></li>
+                            
                             
                         </ul>
                     </div>
@@ -103,66 +127,10 @@
                     </div> -->
                 </div>
             </div>
-            <div class="Pcontainer">
-                <div class="card">
-                    <div class="percent" style="--clr:#04fc43; --num:90;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle cx="75" cy="75" r="70"></circle>
-                            <circle cx="75" cy="75" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h2>90 <span>%</span></h2>
-                            <p>Html</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="percent" style="--clr:#fa3c1a; --num:80;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle cx="75" cy="75" r="70"></circle>
-                            <circle cx="75" cy="75" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h2>80 <span>%</span></h2>
-                            <p>CSS</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="percent" style="--clr:#0278ff; --num:55;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle cx="75" cy="75" r="70"></circle>
-                            <circle cx="75" cy="75" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h2>55 <span>%</span></h2>
-                            <p>Java Script</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="percent" style="--clr:#fceb04; --num:75;">
-                        <div class="dot"></div>
-                        <svg>
-                            <circle cx="75" cy="75" r="70"></circle>
-                            <circle cx="75" cy="75" r="70"></circle>
-                        </svg>
-                        <div class="number">
-                            <h2>75 <span>%</span></h2>
-                            <p>React</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+            
 
     <!-- ----------------certificates--------------- -->
-
+<!-- 
     <div id="certificates">
         <div class="container">
             <h1 class="sub-title">My Certificates</h1>
@@ -179,9 +147,7 @@
                 <div>
                     <img src="certificate/AWS-Training-_-Certification-Certificate-of-Completion.png" alt="certiifcate">
                 </div>
-                <!-- <div>
-                    <img src="certificate/certificate-how-to-speak-effectively-6092c94e2073777c33663a0f.png" alt="certiifcate">
-                </div> -->
+                
                 <div>
                     <img src="certificate/Coursera-BEZWWM8JYUAN.jpg" alt="certiifcate">
                 </div>
@@ -197,7 +163,7 @@
             </div>
             <a class="moreDoc"></a>
         </div>
-    </div> 
+    </div>  -->
 
     <!-- --------------service------------- -->
 
@@ -205,26 +171,26 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
-                    <img src="images/bullhorn.png" alt="">
-                    <h2>Social Media Marketing</h2>
-                    <p>Increasing Restaurant Sales Effective Tips To Attract Customers And Boost Sales.
-                        Implement a social media strategy to reach a larger audience and to create more buzz about your biz. I will design social media banners and posters for your business<br/>
-                        Establish your presence on Facebook, Instagram, Google+. Facebook, Instagram likes and shares can drive people to your website. Links to popular or topical items from or to your website will add to its relevance.
-                    </p>
-                    <a href="#contact">learn more</a>
-                </div>
+                
                 <div>
                     <img src="images/data.png" alt="">
-                    <h2>Web Development</h2>
-                    <p>I will build your website incorporating search engine optimization (SEO) techniques so that you can easily be found by people searching for relevant key words. Your website provides customers an easy way to contact you and learn more about your products, services and business. This can be an important gateway to expanding your business.</p>
-                    <a href="#contact">learn more</a>
+                    <h2>Front-End Developer</h2>
+                    <p>A frontend developer is responsible for creating the user-facing aspects of a website or application. This includes designing and implementing the user interface, as well as ensuring that the application is responsive and accessible on various devices and platforms. </p>
+                    <!-- <a href="#contact">learn more</a> -->
                 </div>
                 <div>
                     <img src="images/responsive-design.png" alt="">
                     <h2>UI/UX Design</h2>
-                    <p>Almost all businesses nowadays require a user interface that is both coherent and capable of assisting them in marketing their products and services to generate revenue. To build a solution, employing a basic yet effective user experience and design may assist in motivating staff to work with zeal and zeal. As a result, all UI/UX designers should make it a point to emphasize user involvement and utilize it to drive their design and aesthetic decisions.</p>
-                    <a href="#contact">learn more</a>
+                    <p>A Figma UI/UX designer is responsible for creating visually appealing and user-friendly designs for websites and applications. Figma is a popular design tool that allows designers to create and collaborate on designs in real-time.</p>
+                    <!-- <a href="#contact">learn more</a> -->
+                </div>
+
+                <div>
+                    <img src="images/bullhorn.png" alt="">
+                    <h2>Social Media Marketing</h2>
+                    <p>I am skilled in conducting thorough research to understand the client's target audience, competition, and industry trends. Based on this research, I develop a comprehensive social media strategy that includes goals, objectives, target audience, content plan, and key performance indicators. 
+                    </p>
+                    <!-- <a href="#contact">learn more</a> -->
                 </div>
                
             </div>
@@ -237,38 +203,72 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Social Media</h3>
-                        <p>Business posts on social media platform like instagram etc. Social media is a great place to start business. Instagram is an excellent way for businesses with visual products (like clothing, foods, jewelry) to showcase their work. Researching your competition on all the major social media platforms. Look for what they're doing, how often they post and what their posts look like. </p>
-                        <a href="#"><img src="images/icons4.png" style="width: 25px;" alt=""></a>
+                <div class="work-container">
+                    <div class="work">
+                        <img src="images/web-1.png" alt="">
+                        <div class="layer">
+                            <h3> Website for Property Dealing</h3>
+                            <p>Whether you're looking to buy, rent, or sell a property, Homyz is a valuable resource for all your property needs.</p>
+                            <a href="https://subtle-medovik-959696.netlify.app/" target="_blank" rel="noopener noreferer"><img src="images/icons4.png" style="width: 25px;" alt=""></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="work-details">
+                        <img src="/images/Homyz.png" alt="Homyz">
+                        <span> is a property discovery website that helps users find their dream homes.
+                            With Homyz, users can search for properties based on location, price, and other criteria.
+                            The website features a user-friendly interface that allows for easy navigation and property search.
+                            Homyz provides users with detailed property information, including photos and floor plans, to help them make informed decisions.</span>
+                        
+                    </div>
+                </div>
+                
+                <div class="work-container">
+                    <div class="work-details">
+                        <img style="width:30%" src="/images/tttmarqlrg.gif" alt="Homyz">
+                        <span> Unlimited is a classic game of Tic Tac Toe that can be played unlimited times on this website. The game features a simple interface and is easy to play for people of all ages. Players can choose to play against the computer or against another player online. With unlimited game play, players can enjoy the game</span>
+                        
                     </div>
                     
+                    <div class="work">
+                        <img src="images/Screenshot (500).png" alt="">
+                        <div class="layer">
+                            <h3> Website for Play Game </h3>
+                            <p>Tic Tac Toe Unlimited offers multiple difficulty levels to challenge players.</p>
+                            <a href="https://zingy-yeot-e8c072.netlify.app/" target="_blank" rel="noopener noreferer"><img src="images/icons4.png" style="width: 25px;" alt=""></a>
+                        </div>
+                        
+                    </div>
+                    
+                    
                 </div>
-                <div class="work">
-                    <img src="images/work-5.png" alt="">
+                
+                <div class="work-container">
+                    <div class="work">
+                    <img src="images/Screenshot (442).png" alt="">
                     <div class="layer">
-                        <h3>Clients</h3>
-                        <p>My freelance work has allowed me to work with clients from all over the world, and I want to built a strong reputation. I am highly organized and self-motivated, which has allowed me to manage multiple projects simultaneously and maintain a flexible schedule that accommodates the needs of my clients. Good clients are closely involved with the project at hand, without micro managing.  They provide the framework and expectations for the work that needs to be done, are available to ask and answer questions, yet respect your expertise and knowledge and trust you to make the right choices. </p>
-                        <a href="#"><img src="images/icons4.png" style="width: 25px;" alt=""></a>
+                        <h3>Website for Foods</h3>
+                        <p>Whether you're looking for a quick bite or a full meal, FoodSizz is the perfect destination for all your food cravings. </p>
+                        <a href="https://bejewelled-twilight-652692.netlify.app/" target="_blank" rel="noopener noreferer"><img src="images/icons4.png" style="width: 25px;" alt=""></a>
                     </div>
 
                 </div>
-                <div class="work">
-                    <img src="images/work-4.png" alt="">
-                    <div class="layer">
-                        <h3>Website Designing</h3>
-                        <p>I have been working as a website designer for the past three years. During this time, I have designed websites for a variety of clients, including small businesses, startups, and individuals. My expertise includes creating custom designs, optimizing websites for search engines, and improving user experience through responsive design. I am also proficient in coding languages such as HTML, CSS, React and JavaScript. Overall, my passion for website design and my commitment to delivering high-quality work has allowed me to build a strong portfolio of successful website projects.</p>
-                        <a href="#"><img src="images/icons4.png" style="width: 25px;" alt=""></a>
-                    </div>
-
+                
+                <div class="work-details">
+                    <img src="/Foodsizz.svg" alt="Homyz">
+                    <span> is a restaurant website that offers a wide range of delicious and mouth-watering dishes.
+                        The website features a user-friendly interface that allows customers to easily browse through the menu and place their orders.
+                        FoodSizz offers online ordering and home delivery services, making it convenient for customers to enjoy their favorite dishes from the comfort of their homes.</span>
+                    
+                </div>
                 </div>
             </div>
-            <a href="/MyPortfolio/mywork.html" class="btn" target="_blank" rel="noopener noreferer">See more</a>
+            <!-- <a href="/mywork.html" class="btn" target="_blank" rel="noopener noreferer">See more</a> -->
+            <div class="btn">See more</div>
         </div>
     </div>
-
+    
     <!-- -----------------contact------------------- -->
     <div id="contact">
         <div class="container">
@@ -276,22 +276,22 @@
                 <div class="contact-left">
                    <h1 class="sub-title">Contact Me</h1> 
                    <p><img src="images/send.png" alt=""> najjamalam786@gmail.com</p>
-                   <p><img src="images/iphone.png" alt="">0123456789</p>
+                   <p><img src="images/iphone.png" alt="">07667650665</p>
                    <div class="social-icon">
                         <a href="https://www.facebook.com/profile.php?id=100009162914855/"><img src="images/facebook.png" alt=""></a>
                         <a href="https://www.instagram.com/m_nazam_/"><img src="images/instagram.png" alt=""></a>
-                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                        <!-- <a href="#"><img src="images/twitter.png" alt=""></a> -->
                         <a href="https://www.linkedin.com/in/md-najjam-alam-823230221/"><img src="images/linkedin.png" alt=""></a>
                         <a href="https://github.com/najjamalam786/"><img src="images/github.png" alt=""></a>
                    </div>
                 </div>
                 <div class="contact-right">
-                    <form action="#">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
+                    <div class="form">
+                        <input id="name" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="email" type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message"   id="textarea" cols="30" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                        <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -368,6 +368,11 @@ function closemenu(){
     }
     
 </script>
+
+
+<!-- -----------------contact------------------- -->
+
+
 
 
 </body>
