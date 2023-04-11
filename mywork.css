@@ -154,6 +154,15 @@
     margin: 5vmax 0 5vmax;
 }
 
+.videoP video{
+    width: 440px;
+    height: 450px;
+}
+.webText h4{
+    line-height: 2vmax;
+
+}
+
 
 
 @media only screen and (max-width: 875px){
@@ -175,5 +184,45 @@
     .swiper{
         width: 65%;
     }
+    .videoP video{
+        width: 100%;
+    }
+/* ---------------- show button --------------- */
+    .webText{
+        position: relative;
+        height: 22vmax;
+        overflow: hidden;
+
+    }
+    .webText::before{
+      content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, rgb(8,8,8));
+    }
+    .containWeb .mywebDoc .mainWeb{
+        position: relative;   
+        margin: 15px;
+        display: inline-block;
+        cursor: pointer;
+        color: #d6094e;
+    }
+    .mywebDoc .mainWeb::before{
+        content: "Show more";
+    }
+    .mywebDoc.active .mainWeb::before{
+        content: "Show less";
+    }
+    .mywebDoc.active .webText{
+        height: auto;
+    }
+    .mywebDoc.active .webText::before{
+       display: none;
+    }
+    
+
 
 }
